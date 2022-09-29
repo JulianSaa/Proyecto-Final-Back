@@ -15,7 +15,7 @@ module.exports.allStockController = async (req, res) =>{
 module.exports.stockByIdController = async (req, res) =>{
     const {id} = req.params
 
-    try {
+    try { 
         const users = await stockById(id)
         return req.status(200).send(users)
 

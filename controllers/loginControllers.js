@@ -5,13 +5,13 @@ const { encrypt } = require("../utils");
 module.exports.loginController = async (req, res) =>{
     const {email, password} = req.body;
     console.log(email, password)
-
+ 
     try {
         const data = await login(email, password)
         return res.status(200).send(data)
     }catch(err){
         console.log(err)
-        return res.send('El usuario es incorrecto')
+        return res.send('Se produjo un error al registrarse')
     }
 }
 

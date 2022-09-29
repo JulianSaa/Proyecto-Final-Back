@@ -2,7 +2,7 @@ const {allusers, userById, delateUser} = require('../models/users')
 
 module.exports.allUsersController = async (req, res) =>{
     try {
-        const users = await allusers()
+        const users = await allusers() 
         return req.status(200).send(users)
 
     }catch(err){
