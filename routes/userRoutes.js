@@ -23,17 +23,4 @@ router.get("/", async (req, res) => {
 })
 
 
-
-// router.post("/create", (req, res) => res.send("Creacion de usuario."))
-
-// router.post("/create/:id",  validarPag, (req, res) => res.send(`Creacion de libro ${req.params.id}.`))
-
-// router.put("/update", (req, res) => res.send("Actualizacion de libros."))
-
-// router.put("/update/:id", validarPag, (req, res) => res.send(`Actualizacion de libros ${req.params.id}.`))
-
-// router.delete("/delete", (req, res) => res.send("Eliminacion de libros."))
-
-// router.delete("/delete/:id", validarPag, (req, res) => res.send(`Eliminacion de libros ${req.params.id}.`))
-
 module.exports = router
